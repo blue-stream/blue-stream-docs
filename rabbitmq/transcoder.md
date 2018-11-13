@@ -12,7 +12,7 @@ The published event will be called `trancoder.trancode.succeeded`
 ``` javascript
 {
     id: string, // document id from db
-    videoPath: string, // trancoded mp4 video(81850287.mp4)
+    contentPath: string, // trancoded mp4 video(81850287.mp4)
     thumbnailPath: string, // thumbnail of the video(81850287.png)
     previewPath: string, // preview of the video(81850287.gif)
 }
