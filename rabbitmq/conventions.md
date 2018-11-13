@@ -2,26 +2,28 @@
 
 ## Connections
 For each microservice instance:
-- we use 2 connections for (for publish and consume).
-  - we use 1 channel for publish messages.
-  - we use 1 channel for each consumer.
+- 1 connection
+  - 1 channel for publishing.
+  - 1 channel for each consumer.
 
 ## Exchange
-Currently we use 1 exchange named `application` with these settings:
+- name: `application`
 - type: `topic`
 - durable: true
 
 ## Queue
-We use these settings for queues:
 - durable: true 
 - ack: true
 
 ## Message
-We use these settings for messages:
-- for subscribe, requeue: false
-- no prefetch. if you need you can configure the channel to prefetch
-- we use JSON format
-- for publish, persistent: true
+### Subscribe
+- No `prefetch` by default (can be configured).
+- When rejecting (reject / nack) a message use `requeue: false`
+- Use `JSON` format (`JSON.parse`)
+
+### Publish
+- Use `JSON` format (`JSON.stringify`)
+- Each message should have `persistent: true`
 
 ## Pattern
 Pub/Sub | Observable pattern is used
@@ -35,12 +37,9 @@ Each queue contains messages of only <b>one</b> job type.
 
 Every event will have the following structure: `sourceMicroservice.action.status`
 
-* Entity - name of entity
-
 * Statuses
     * succeeded
     * failed
-    * pending
 
 * Queues
     * nameOfMicroservice-action-queue
