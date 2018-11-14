@@ -6,7 +6,7 @@
 Published by the `transcoder` microservice after video is succeessfully transcoded.
 
 #### Event
-The published event will be called `trancoder.trancode.succeeded`
+The published event will be called `transcoder.video.transcode.succeeded`
 
 #### Event body
 ``` javascript
@@ -22,7 +22,7 @@ The published event will be called `trancoder.trancode.succeeded`
 Published by the `transcoder` microservice after video is failed transcoding.
 
 #### Event
-The published event will be called `trancoder.trancode.failed`
+The published event will be called `transcoder.video.transcode.failed`
 
 #### Event body
 ``` javascript
