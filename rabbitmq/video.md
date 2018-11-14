@@ -3,7 +3,7 @@
 ## Call transcoding service
 
 ### Event
-Routing key of the event will be `video.upload.succeeded`
+Routing key of the event will be `videoService.video.upload.succeeded`
 
 ### Event body
 ```javascript
