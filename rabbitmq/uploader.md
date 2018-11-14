@@ -1,6 +1,6 @@
 # Uploader
 
-Uploader routing key structure: `uploader.{action-name}.{action-status}`
+Uploader routing key structure: `uploader.video.{action-name}.{action-status}`
 
 The Uploader micro-service can publish the following messages to RabbitMQ:
 
@@ -8,7 +8,7 @@ The Uploader micro-service can publish the following messages to RabbitMQ:
 
 Published after a video was succeessfully uploaded to the defined storage.
 
-Routing key: `uploader.upload.succeeded`
+Routing key: `uploader.video.upload.succeeded`
 
 #### Message body
 ``` javascript
@@ -21,7 +21,7 @@ Routing key: `uploader.upload.succeeded`
 ## Upload Failed
 Published after a video has failed to be uploaded to the defined storage.
 
-Routing key: `uploader.upload.failed`
+Routing key: `uploader.video.upload.failed`
 
 ### Message body
 ``` javascript
@@ -33,7 +33,7 @@ Routing key: `uploader.upload.failed`
 ## Upload Canceled
 Published after a user have canceled the upload of a video to the defined storage.
 
-Routing key: `uploader.upload.canceled`
+Routing key: `uploader.video.upload.canceled`
 
 ### Message body
 ``` javascript
