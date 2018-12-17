@@ -2,10 +2,10 @@
 
 ```javascript
 IChannel {
-    id: string (ObjectID),
-    user: string,
-    name: string,
-    description: string
+    id: string (ObjectID);
+    user: string;
+    name: string;
+    description: string;
 }
 ```
 
