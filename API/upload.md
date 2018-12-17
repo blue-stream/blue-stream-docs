@@ -1,10 +1,10 @@
-# Comment Service API
+# Video Service API
 
 ## POST
 
 ### /api/upload/
 
-Create a single comment
+Upload a single video
 
 #### Request
 ``` javascript
