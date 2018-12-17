@@ -222,7 +222,8 @@ Get replies of a specific comment by it's id
             user: string,
             createdAt: string (Date),
             updatedAt: string (Date),
-            id: string (ObjectID) 
+            id: string (ObjectID),
+            repliesAmount: number
         }
     ]
 }
