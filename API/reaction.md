@@ -68,7 +68,7 @@ Update a single reaction
 
 ### /api/reaction/
 
-Update a single reaction
+Delete a single reaction
 
 #### Request
 ``` javascript
