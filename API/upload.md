@@ -1,4 +1,4 @@
-# Video Service API
+# Upload Service API
 
 ## POST
 
