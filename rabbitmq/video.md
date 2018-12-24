@@ -28,3 +28,19 @@ Routing key: `videoService.video.remove.succeeded`
     id: string, // id of removed video
 }
 ```
+
+## Subscribe
+
+The video micro-service subscribes to the following queue: `video-deleteAfterChannelRemoval-queue`
+
+with the following routing keys: 
+`channelService.channel.remove.succeeded`
+
+and the following messages:
+
+#### Message body
+``` javascript
+{
+    id: string, // id of removed channel
+}
+```
