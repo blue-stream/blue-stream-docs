@@ -157,7 +157,9 @@ Get array of comments
         type?: commentType,
         user?: string,
         startIndex?: number,
-        endIndex?: number
+        endIndex?: number,
+        sortOrder?: '-' | '',
+        sortBy?: string,
     }
     
 }
