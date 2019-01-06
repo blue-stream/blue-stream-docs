@@ -159,7 +159,9 @@ Get array of channels
         name?: string,
         description?: string,
         startIndex?: number,
-        endIndex?: number
+        endIndex?: number,
+        sortOrder?: '' | '-',
+        sortBy?: 'name' | 'description' | 'user'
     }
     
 }
