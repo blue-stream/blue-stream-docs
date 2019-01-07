@@ -109,6 +109,24 @@ Get single video by filter
 }
 ```
 
+### /api/view/
+
+Get user's viewed videos
+
+### Request
+``` javascript
+{
+    headers: {
+        authorization: string // Contains user's jwt
+    }
+}
+```
+
+### Response Body
+``` javascript
+string[]
+```
+
 ## POST
 
 ### /api/video
@@ -137,6 +155,27 @@ Create a video document
     updatedAt: string (Date),
 }
 ```
+
+### /api/view/:video
+
+Increases video's `view`s amount.
+User can increase `view` of video every 15 minutes (can be changed in configuration file)
+
+#### Request
+``` javascript
+{
+    params: {
+        video: string (ObjectId)
+    },
+    headers: {
+        authorization: string // required
+    }
+}
+```
+
+#### Response Status
+200 - (Empty body)
+
 
 ## PUT 
 
