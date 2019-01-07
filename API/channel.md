@@ -39,36 +39,9 @@ Create a single channel
 
 ## PUT
 
-### /api/channel/:id/name
+### /api/channel/:id
 
-Update channel's name using it's id
-
-#### Request
-``` javascript
-{
-    params: {
-        id: string
-    },
-    body: {
-        name: string
-    }
-}
-```
-#### Response Body
-``` javascript
-{
-    id: string (ObjectID),
-    user: string,
-    name: string,
-    description: string,
-    createdAt: string (Date),
-    updatedAt: string (Date)
-}
-```
-
-### /api/channel/:id/description
-
-Update channel's description using it's id
+Update a channel using it's id
 
 #### Request
 ``` javascript
@@ -77,6 +50,7 @@ Update channel's description using it's id
         id: string
     },
     body: {
+        name: string,
         description: string
     }
 }
