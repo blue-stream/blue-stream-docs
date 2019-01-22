@@ -19,7 +19,7 @@ Create a single channel
 ``` javascript
 {
     body: {
-        user: string,
+        user: string, // Change to req.user.id
         name: string,
         description: string,
     }
