@@ -18,7 +18,9 @@ Create a single reaction
         resource: string,
         resourceType: ResourceType,
         type: ReactionType,
-        user: string
+    },
+    headers: {
+        Authorization: string // User token
     }
 }
 ```
@@ -44,11 +46,13 @@ Update a single reaction
 ``` javascript
 {
     query: {
-        resource: string,
-        user: string
+        resource: string
     },
     body: {
         type: ReactionType
+    },
+    headers: {
+        Authorization: string // User token
     }
 }
 ```
@@ -74,9 +78,11 @@ Delete a single reaction
 ``` javascript
 {
     query: {
-        resource: string,
-        user: string
+        resource: string
     },
+    headers: {
+        Authorization: string // User token
+    }
 }
 ```
 
