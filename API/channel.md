@@ -20,8 +20,10 @@ Create a single channel
 {
     body: {
         user: string, // Change to req.user.id
-        name: string,
         description: string,
+    },
+    headers: {
+        Authorization: string // User token
     }
 }
 ```

@@ -13,7 +13,9 @@ Create a single comment
         resource: string,
         parent?: string,
         text: string,
-        user: string
+    },
+    headers: {
+        Authorization: string // User token
     }
 }
 ```
