@@ -103,7 +103,7 @@ Get a specific reaction by providing a resource and a user.
 {
     query: {
         resource: string,
-        resourceType: ResourceType
+        user: string
     }
 }
 ```
