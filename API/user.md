@@ -12,7 +12,7 @@ Create a single user
     body: {
         id: string, // Unique
         firstname: string,
-        lastName: string
+        lastName: string,
         mail: string
     },
     headers: {
@@ -29,8 +29,8 @@ Create a single user
     lastName: string,
     name: string,
     mail: string,
-    createdAt: string,
-    updatedAt: string
+    createdAt: string (Date),
+    updatedAt: string (Date)
 }
 ```
 
@@ -65,8 +65,8 @@ Update a single user
     lastName: string,
     name: string,
     mail: string,
-    createdAt: string,
-    updatedAt: string
+    createdAt: string (Date),
+    updatedAt: string (Date)
 }
 ```
 
@@ -96,8 +96,8 @@ Get a single user
     lastName: string,
     name: string,
     mail: string,
-    createdAt: string,
-    updatedAt: string
+    createdAt: string (Date),
+    updatedAt: string (Date)
 }
 ```
 
@@ -131,8 +131,8 @@ Get array of users
             lastName: string,
             name: string,
             mail: string,
-            createdAt: string,
-            updatedAt: string
+            createdAt: string (Date),
+            updatedAt: string (Date)
         }
     ]
 }
